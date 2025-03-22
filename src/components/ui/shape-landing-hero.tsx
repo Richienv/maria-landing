@@ -5,6 +5,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { Circle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 
 function ElegantShape({
@@ -192,6 +193,17 @@ function HeroGeometric({
                             Crafting exceptional digital experiences through
                             innovative design and cutting-edge technology.
                         </p>
+                    </motion.div>
+
+                    <motion.div
+                        custom={3}
+                        variants={fadeUpVariants}
+                        initial="hidden"
+                        animate="visible"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+                    >
+                        <GradientButton>Get Started</GradientButton>
+                        <GradientButton variant="variant">Learn More</GradientButton>
                     </motion.div>
                 </div>
             </div>

@@ -5,6 +5,8 @@ import { ThreeDPhotoCarouselDemo } from "@/components/ui/three-d-photo-carousel-
 import { SplineSceneBasic } from "@/components/ui/spline-scene-demo";
 import { BentoGridDemo } from "@/components/ui/bento-grid-demo";
 import { MentoringSectionDemo } from "@/components/ui/mentoring-section-demo";
+import { WorkshopSectionDemo } from "@/components/ui/workshop-section-demo";
+import { CommunitySectionDemo } from "@/components/ui/community-section-demo";
 
 export default function Home() {
   return (
@@ -28,6 +30,12 @@ export default function Home() {
       </section>
       <section className="border-t border-white/5">
         <MentoringSectionDemo />
+      </section>
+      <section className="border-t border-white/5">
+        <WorkshopSectionDemo />
+      </section>
+      <section className="border-t border-white/5">
+        <CommunitySectionDemo />
       </section>
     </main>
   );
