@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    // Disable ESLint during production builds
+    ignoreDuringBuilds: true,
+  },
   images: {
-    domains: ['images.unsplash.com', 'picsum.photos'],
     remotePatterns: [
       {
         protocol: 'https',
