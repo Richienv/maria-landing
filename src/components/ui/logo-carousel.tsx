@@ -141,4 +141,4 @@ export function LogoCarousel({ columnCount = 2, logos }: LogoCarouselProps) {
   )
 }
 
-export { LogoColumn }; 
+export { LogoColumn } 

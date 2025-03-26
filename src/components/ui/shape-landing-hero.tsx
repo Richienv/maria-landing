@@ -75,9 +75,9 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-    badge = "Design Collective",
-    title1 = "Elevate Your Digital Vision",
-    title2 = "Crafting Exceptional Websites",
+    badge = "Elite Community",
+    title1 = "Your Live Change",
+    title2 = "Today",
 }: {
     badge?: string;
     title1?: string;
@@ -190,8 +190,7 @@ function HeroGeometric({
                         animate="visible"
                     >
                         <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-                            Crafting exceptional digital experiences through
-                            innovative design and cutting-edge technology.
+                            Step into a world of growth, collaboration, and financial mastery with our community of 700+ driven individuals who support each other and build lasting legacies.
                         </p>
                     </motion.div>
 
@@ -202,7 +201,6 @@ function HeroGeometric({
                         animate="visible"
                         className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
                     >
-                        <GradientButton>Get Started</GradientButton>
                         <GradientButton variant="variant">Learn More</GradientButton>
                     </motion.div>
                 </div>

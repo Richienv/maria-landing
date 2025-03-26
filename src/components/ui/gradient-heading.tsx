@@ -1,47 +1,46 @@
-"use client";
+import { cn } from "@/lib/utils"
+import React from "react"
 
-import React from "react";
-import { cn } from "@/lib/utils";
-
-interface GradientHeadingProps {
-  children: React.ReactNode;
-  size?: "sm" | "md" | "lg" | "xl" | "xxl";
-  as?: React.ElementType;
-  variant?: "primary" | "secondary" | "tertiary";
-  className?: string;
+interface GradientHeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
+  children: React.ReactNode
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span"
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl"
+  variant?: "default" | "secondary"
 }
 
 export function GradientHeading({
   children,
-  size = "lg",
   as: Component = "h2",
-  variant = "primary",
+  size = "lg",
+  variant = "default",
   className,
+  ...props
 }: GradientHeadingProps) {
   const sizeClasses = {
-    sm: "text-xl md:text-2xl",
-    md: "text-2xl md:text-3xl",
-    lg: "text-3xl md:text-4xl",
-    xl: "text-4xl md:text-5xl lg:text-6xl",
-    xxl: "text-5xl md:text-6xl lg:text-7xl",
-  };
+    xs: "text-sm sm:text-base md:text-lg",
+    sm: "text-base sm:text-lg md:text-xl",
+    md: "text-lg sm:text-xl md:text-2xl",
+    lg: "text-xl sm:text-2xl md:text-3xl",
+    xl: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
+    xxl: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl",
+  }
 
   const variantClasses = {
-    primary: "bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400",
-    secondary: "bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-400",
-    tertiary: "bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-400",
-  };
+    default: "bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400",
+    secondary: "bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500",
+  }
 
   return (
     <Component
       className={cn(
-        "font-bold tracking-tight bg-clip-text text-transparent",
+        "font-bold tracking-tight",
         sizeClasses[size],
         variantClasses[variant],
         className
       )}
+      {...props}
     >
       {children}
     </Component>
-  );
+  )
 } 

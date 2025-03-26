@@ -4,9 +4,9 @@ import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 function DemoHeroGeometric() {
     return (
         <HeroGeometric 
-            badge="Kokonut UI"
-            title1="Elevate Your" 
-            title2="Digital Vision" 
+            badge="Open Recruitment Limited Quota"
+            title1="Your Live Change" 
+            title2="Today" 
         />
     );
 }

@@ -4,10 +4,10 @@ function WorkshopSectionDemo() {
   return (
     <MentoringSection 
       sectionNumber="05."
-      gradientTitle="Hands-On Workshops"
+      gradientTitle="Monthly Workshops"
       titleGradient="from-amber-500 via-orange-500 to-rose-500"
-      mainHeading="Learn By Doing In Our Immersive Workshop Sessions"
-      subHeading="praktik langsung dengan mentor berpengalaman untuk keterampilan yang dapat diterapkan segera."
+      mainHeading="Get Practical with In-depth Monthly Workshops Led by Top Experts"
+      subHeading="Whether it's mastering negotiation tactics, designing a family financial plan, or sharpening your leadership skills, these sessions give you immediately applicable expertise."
       images={[
         {
           src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=90",
@@ -22,7 +22,7 @@ function WorkshopSectionDemo() {
           alt: "Interactive workshop with digital tools and equipment"
         }
       ]}
-      buttonText="JOIN WORKSHOP, 2JT"
+      buttonText="ACCESS ALL WORKSHOP MATERIALS"
     />
   )
 }

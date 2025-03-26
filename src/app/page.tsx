@@ -7,6 +7,8 @@ import { BentoGridDemo } from "@/components/ui/bento-grid-demo";
 import { MentoringSectionDemo } from "@/components/ui/mentoring-section-demo";
 import { WorkshopSectionDemo } from "@/components/ui/workshop-section-demo";
 import { CommunitySectionDemo } from "@/components/ui/community-section-demo";
+import { LogoCarouselDemo } from "@/components/ui/logo-carousel-demo";
+import { DialogDemo } from "@/components/ui/dialog-demo";
 
 export default function Home() {
   return (
@@ -36,6 +38,12 @@ export default function Home() {
       </section>
       <section className="border-t border-white/5">
         <CommunitySectionDemo />
+      </section>
+      <section className="border-t border-white/5 dark bg-gradient-to-b from-zinc-900 to-black py-8">
+        <LogoCarouselDemo />
+      </section>
+      <section className="border-t border-white/5">
+        <DialogDemo />
       </section>
     </main>
   );

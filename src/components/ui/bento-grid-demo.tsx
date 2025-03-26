@@ -8,44 +8,48 @@ import {
     TrendingUp,
     Video,
     Globe,
+    Users,
+    Award,
+    Briefcase,
+    ShieldCheck,
 } from "lucide-react";
 
 
 const itemsSample: BentoItem[] = [
     {
-        title: "Analytics Dashboard",
-        meta: "v2.4.1",
+        title: "Wealth Building System",
+        meta: "Proven Strategy",
         description:
-            "Real-time metrics with AI-powered insights and predictive analytics",
+            "Access our proprietary financial system that has generated consistent returns for over 700 elite members",
         icon: <TrendingUp className="w-4 h-4 text-blue-500" />,
-        status: "Live",
-        tags: ["Statistics", "Reports", "AI"],
+        status: "Exclusive",
+        tags: ["Finance", "Growth", "Wealth"],
         colSpan: 2,
         hasPersistentHover: true,
     },
     {
-        title: "Task Manager",
-        meta: "84 completed",
-        description: "Automated workflow management with priority scheduling",
-        icon: <CheckCircle className="w-4 h-4 text-emerald-500" />,
-        status: "Updated",
-        tags: ["Productivity", "Automation"],
+        title: "Mentorship Access",
+        meta: "1-on-1 Sessions",
+        description: "Direct guidance from Indonesia's top financial strategists",
+        icon: <Users className="w-4 h-4 text-emerald-500" />,
+        status: "Members Only",
+        tags: ["Guidance", "Expertise"],
     },
     {
-        title: "Media Library",
-        meta: "12GB used",
-        description: "Cloud storage with intelligent content processing",
+        title: "Premium Resources",
+        meta: "150+ Hours",
+        description: "Comprehensive training materials and investment guides unavailable elsewhere",
         icon: <Video className="w-4 h-4 text-purple-500" />,
-        tags: ["Storage", "CDN"],
+        tags: ["Education", "Resources"],
         colSpan: 2,
     },
     {
-        title: "Global Network",
-        meta: "6 regions",
-        description: "Multi-region deployment with edge computing",
+        title: "Elite Network",
+        meta: "7 Major Cities",
+        description: "Connect with Indonesia's top entrepreneurs and financial leaders",
         icon: <Globe className="w-4 h-4 text-sky-500" />,
-        status: "Beta",
-        tags: ["Infrastructure", "Edge"],
+        status: "VIP",
+        tags: ["Networking", "Community"],
     },
 ];
 
@@ -54,10 +58,10 @@ function BentoGridDemo() {
         <div className="container mx-auto py-12">
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-4">
-                    Features Showcase
+                    Exclusive Member Benefits
                 </h2>
                 <p className="text-neutral-300 max-w-2xl mx-auto">
-                    Explore our powerful features designed to enhance your productivity and transform your workflow.
+                    Join our elite team and gain access to exclusive resources, strategies, and networks that transform your financial future.
                 </p>
             </div>
             <BentoGrid items={itemsSample} />

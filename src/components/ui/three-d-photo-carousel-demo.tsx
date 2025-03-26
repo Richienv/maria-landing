@@ -7,10 +7,10 @@ export function ThreeDPhotoCarouselDemo() {
       <div className="space-y-8">
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            Visual Inspiration Gallery
+            Our Community in Action
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Explore our interactive gallery and discover visual inspirations. Drag to rotate the carousel and click on any image to view in detail.
+            Experience our vibrant community events - from exclusive networking dinners in Jakarta to hands-on workshops and annual team retreats in stunning destinations like Lombok and Bandung.
           </p>
         </div>
         <div className="min-h-[500px] flex flex-col justify-center">
