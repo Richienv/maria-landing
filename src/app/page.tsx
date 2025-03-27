@@ -9,6 +9,7 @@ import { WorkshopSectionDemo } from "@/components/ui/workshop-section-demo";
 import { CommunitySectionDemo } from "@/components/ui/community-section-demo";
 import { LogoCarouselDemo } from "@/components/ui/logo-carousel-demo";
 import { DialogDemo } from "@/components/ui/dialog-demo";
+import { BentoDemo } from "@/components/ui/bento-demo";
 
 export default function Home() {
   return (
@@ -16,6 +17,12 @@ export default function Home() {
       <section className="min-h-screen">
         <DemoHeroGeometric />
       </section>
+      
+      {/* New Bento Grid Section */}
+      <section className="border-t border-white/5">
+        <BentoDemo />
+      </section>
+      
       <section className="dark feature-section-dark border-t border-white/5">
         <FeatureStepsDemo />
       </section>
