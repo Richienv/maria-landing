@@ -55,16 +55,20 @@ const itemsSample: BentoItem[] = [
 
 function BentoGridDemo() {
     return (
-        <div className="container mx-auto py-12">
-            <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-4">
-                    Exclusive Member Benefits
-                </h2>
-                <p className="text-neutral-300 max-w-2xl mx-auto">
-                    Join our elite team and gain access to exclusive resources, strategies, and networks that transform your financial future.
-                </p>
+        <div className="w-full bg-black py-16 md:py-24">
+            <div className="container mx-auto px-4 md:px-8">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-6">
+                        Exclusive Member Benefits
+                    </h2>
+                    <p className="text-neutral-300 text-lg md:text-xl max-w-3xl mx-auto">
+                        Join our elite team and gain access to exclusive resources, strategies, and networks that transform your financial future.
+                    </p>
+                </div>
+                <div className="bg-black w-full">
+                    <BentoGrid items={itemsSample} />
+                </div>
             </div>
-            <BentoGrid items={itemsSample} />
         </div>
     );
 }
